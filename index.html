@@ -5,21 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meria Studio | Modern Websites for Local Businesses</title>
   <meta name="description" content="Meria Studio creates clean, modern websites for local businesses that want more enquiries, customers and online credibility." />
+  <link rel="icon" type="image/png" href="meria-studio-logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
-    <a href="#" class="brand"><img src="meria-studio-logo.png" alt="Meria Studio logo" /></a>
+    <a href="index.html" class="brand"><img src="meria-studio-logo.png" alt="Meria Studio logo" /></a>
     <nav class="nav">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html" class="">Work</a>
+      <a href="services.html" class="">Services</a>
+      <a href="contact.html" class="">Contact</a>
       <a href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">Instagram</a>
     </nav>
   </header>
-
   <main>
+
     <section class="hero">
       <img class="hero-watermark" src="meria-studio-logo.png" alt="" aria-hidden="true" />
       <div class="hero-content">
@@ -27,15 +29,14 @@
         <h1>Built for Growth.</h1>
         <p class="hero-copy">We design clean, modern websites that help local businesses look professional, build trust and turn visitors into customers.</p>
         <div class="actions">
-          <a href="#contact" class="button dark">Get a Free Mockup</a>
-          <a href="#work" class="button light">View Our Work</a>
+          <a href="contact.html" class="button dark">Get a Free Mockup</a>
+          <a href="work.html" class="button light">View Our Work</a>
         </div>
       </div>
     </section>
 
     <section class="visual">
       <div class="mockup">
-        
         <div class="mockup-inner">
           <p class="eyebrow">Premium digital presence</p>
           <h2>Designed to make your business easier to find, trust and contact.</h2>
@@ -43,16 +44,11 @@
       </div>
     </section>
 
-<section id="work" class="section">
-  <p class="eyebrow">Our work</p>
-  <h2>Selected Work.</h2>
-  <p class="section-copy">
-    A selection of website concepts and demo projects designed to showcase
-    what’s possible for local businesses.
-  </p>
-
-  <div class="work-grid">
-
+    <section id="work" class="section">
+      <p class="eyebrow">Our work</p>
+      <h2>Selected Work.</h2>
+      <p class="section-copy">A snapshot of website concepts and demo projects designed to show what’s possible for local businesses.</p>
+      <div class="work-grid">
     <article class="work-card">
       <div class="work-image">
         <span>Restaurant Concept</span>
@@ -82,9 +78,7 @@
           quote requests and local plumbing leads through clear navigation and
           strong calls to action.
         </p>
-        <a href="https://meria-studio.github.io/northern-plumbing/index.html"
-           target="_blank"
-           rel="noopener">
+        <a href="https://meria-studio.github.io/northern-plumbing/index.html" target="_blank" rel="noopener">
           View project →
         </a>
       </div>
@@ -92,23 +86,25 @@
 
     <article class="work-card">
       <div class="work-image muted">
-        <span>Coming Soon</span>
+        <span>Beauty Concept</span>
       </div>
       <div class="work-content">
         <p class="card-label">Beauty & aesthetics</p>
         <h3>Luxe Beauty Studio</h3>
         <p>
-          A premium beauty salon website concept currently in development,
-          focused on bookings, treatments and luxury branding.
+          A premium beauty salon website concept focused on bookings,
+          treatments and luxury branding.
         </p>
-        <a href="#contact">
-          Coming soon →
+        <a href="contact.html">
+          Enquire about similar →
         </a>
       </div>
     </article>
-
   </div>
-</section>
+      <div class="preview-actions">
+        <a href="work.html" class="button dark">View All Work</a>
+      </div>
+    </section>
 
     <section id="services" class="section soft">
       <p class="eyebrow">Our services</p>
@@ -121,121 +117,50 @@
         <article><h3>Google Business Profile Setup</h3><p>Support with your local presence on Google Search and Maps so customers can find your business quickly.</p></article>
         <article><h3>Booking & Contact Systems</h3><p>Simple integrations that make it easy for customers to book appointments, place enquiries and get in touch.</p></article>
       </div>
+      <div class="preview-actions">
+        <a href="services.html" class="button dark">Explore Services</a>
+      </div>
     </section>
 
     <section class="section process">
-  <p class="eyebrow">Our process</p>
-  <h2>Simple, straightforward and designed around your business.</h2>
+      <p class="eyebrow">Our process</p>
+      <h2>How we bring your website to life.</h2>
 
-  <div class="process-grid">
+      <div class="process-grid">
+        <div class="process-card">
+          <span>01</span>
+          <h3>Free Website Concept</h3>
+          <p>We create a complimentary homepage concept tailored to your business before you commit.</p>
+        </div>
 
-    <div class="process-card">
-      <span>01</span>
-      <h3>Free Homepage Mockup</h3>
-      <p>
-        We create a free homepage concept for your business so you can see
-        exactly what your new website could look like before committing.
-      </p>
-    </div>
+        <div class="process-card">
+          <span>02</span>
+          <h3>Review & Refine</h3>
+          <p>We'll work with you to make changes, refine the design and ensure everything reflects your business perfectly.</p>
+        </div>
 
-    <div class="process-card">
-      <span>02</span>
-      <h3>Review & Refine</h3>
-      <p>
-        We'll work with you to make changes, refine the design and ensure
-        everything reflects your business perfectly.
-      </p>
-    </div>
+        <div class="process-card">
+          <span>03</span>
+          <h3>Build & Launch</h3>
+          <p>Once approved, we build the full website, connect your domain and launch it online.</p>
+        </div>
 
-    <div class="process-card">
-      <span>03</span>
-      <h3>Build & Launch</h3>
-      <p>
-        Once approved, we build the full website, connect your domain and
-        launch it online.
-      </p>
-    </div>
-
-    <div class="process-card">
-      <span>04</span>
-      <h3>Ongoing Support</h3>
-      <p>
-        We can continue to help with updates, maintenance and improvements
-        whenever your business needs them.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-    <section class="section quote">
-      <p class="eyebrow">Tailored pricing</p>
-      <h2>Every business is different.</h2>
-      <p>No two businesses have the same goals, requirements or budget. That’s why we provide tailored solutions designed around your specific needs.</p>
-      <div class="quote-box">
-        <h3>Get a free website mockup</h3>
-        <p>We’ll create a complimentary homepage concept for your business before you commit to anything.</p>
-        <a href="#contact" class="button dark">Request a Free Quote</a>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="contact-copy">
-        <p class="eyebrow">Let's work together</p>
-        <h2>Ready to improve your online presence?</h2>
-        <p>
-          We create free homepage concepts for your business before you commit to anything.
-          Send us your business name, current website or social media page, and what you’d like improved.
-        </p>
-
-        <div class="contact-link-grid">
-          <a class="contact-card" href="mailto:hello@meriastudio.com">
-            <span class="contact-icon"><i class="fa-regular fa-envelope"></i></span>
-            <span>
-              <strong>Email us</strong>
-              <small>hello@meriastudio.com</small>
-            </span>
-            <em>↗</em>
-          </a>
-
-          <a class="contact-card" href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">
-            <span class="contact-icon"><i class="fa-brands fa-instagram"></i></span>
-            <span>
-              <strong>Instagram</strong>
-              <small>@meria.studios</small>
-            </span>
-            <em>↗</em>
-          </a>
+        <div class="process-card">
+          <span>04</span>
+          <h3>Ongoing Support</h3>
+          <p>We can continue to help with updates, maintenance and improvements whenever your business needs them.</p>
         </div>
       </div>
-
-      <form class="contact-form" action="https://formspree.io/f/xkoabkez" method="POST">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name" required />
-        </label>
-
-        <label>
-          Email
-          <input type="email" name="email" placeholder="your@email.com" required />
-        </label>
-
-        <label>
-          Business name
-          <input type="text" name="business" placeholder="Your business name" />
-        </label>
-
-        <label>
-          Message
-          <textarea name="message" rows="5" placeholder="Tell us what you need help with..." required></textarea>
-        </label>
-
-        <button type="submit" class="button dark">Send Enquiry</button>
-
-      </form>
     </section>
-  </main>
 
+    <section class="cta-strip">
+      <p class="eyebrow">Free website concept</p>
+      <h2>Want to see what your business could look like online?</h2>
+      <p>Send us your business name, current website or social page and we’ll create a free homepage concept before you commit to anything.</p>
+      <a href="contact.html" class="button white">Get a Free Mockup</a>
+    </section>
+
+  </main>
   <footer>
     <p>© 2026 Meria Studio. Modern websites for local businesses.</p>
     <div><a href="mailto:hello@meriastudio.com">Email</a><a href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">Instagram</a></div>
