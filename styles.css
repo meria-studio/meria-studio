@@ -81,31 +81,35 @@
 
 /* Process Section */
 
+.process {
+  background: #f8f8f8;
+}
+
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
 }
 
 .process-card {
   background: #ffffff;
-  border: 1px solid #ececec;
-  border-radius: 20px;
   padding: 2rem;
-  transition: transform 0.25s ease;
-}
-
-.process-card:hover {
-  transform: translateY(-4px);
+  border-radius: 24px;
+  border: 1px solid #ececec;
 }
 
 .process-card span {
-  display: inline-block;
-  font-size: 0.85rem;
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 2px;
-  color: #888;
   margin-bottom: 1rem;
 }
 
@@ -116,4 +120,10 @@
 .process-card p {
   color: #666;
   line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
 }
