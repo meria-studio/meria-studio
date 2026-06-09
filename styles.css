@@ -80,19 +80,42 @@
 }
 
 
-/* Multi-page layout additions */
+
+/* Proper multi-page additions */
+
+.nav {
+  align-items: center;
+}
+
+.nav-button {
+  background: #111;
+  color: #fff !important;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+.nav-button:hover {
+  opacity: 0.85;
+}
+
+.nav a.active {
+  font-weight: 900;
+}
+
 .page-hero {
   position: relative;
   overflow: hidden;
   text-align: center;
-  padding: 110px 6vw 85px;
+  padding: 115px 6vw 85px;
   background:
     radial-gradient(circle at 50% 8%, rgba(0,0,0,0.04), transparent 34%),
     var(--cream);
 }
 
 .page-hero .hero-watermark {
-  top: 15px;
+  top: 20px;
 }
 
 .page-hero-content {
@@ -103,27 +126,26 @@
 }
 
 .page-hero h1 {
-  font-size: clamp(52px, 8vw, 104px);
+  font-size: clamp(54px, 8vw, 108px);
 }
 
 .page-hero p:not(.eyebrow) {
   max-width: 760px;
-  margin: 24px auto 0;
+  margin: 26px auto 0;
   font-size: 21px;
 }
 
-.preview-actions {
-  margin-top: 32px;
+.home-work-preview .work-grid {
+  margin-bottom: 34px;
 }
 
-.service-intro,
-.work-intro {
-  max-width: 860px;
+.preview-actions {
+  margin-top: 30px;
 }
 
 .cta-strip {
   text-align: center;
-  padding: 95px 6vw;
+  padding: 105px 6vw;
   background: #111;
   color: #fff;
 }
@@ -133,10 +155,19 @@
 }
 
 .cta-strip p {
+  color: #c7c7cc;
   max-width: 720px;
   margin: 0 auto 28px;
-  color: #c7c7cc;
   font-size: 19px;
+}
+
+.cta-strip .eyebrow {
+  color: #c7c7cc;
+}
+
+.white {
+  background: #fff;
+  color: #111;
 }
 
 .faq-list {
@@ -161,12 +192,16 @@
   margin-bottom: 0;
 }
 
-.nav a.active {
-  font-weight: 800;
+.contact-page-section {
+  padding-top: 90px;
 }
 
 @media (max-width: 950px) {
+  .nav-button {
+    display: none;
+  }
+
   .page-hero {
-    padding-top: 85px;
+    padding-top: 90px;
   }
 }
