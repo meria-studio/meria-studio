@@ -26,7 +26,7 @@
   <header class="header">
     <a href="../" class="brand"><img src="../meria-studio-logo.png" alt="Meria Studio logo" /></a>
 
-    <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.body.classList.toggle('nav-open'); this.setAttribute('aria-expanded', document.body.classList.contains('nav-open'))">
       <span></span>
       <span></span>
       <span></span>
@@ -36,6 +36,7 @@
       <a href="../">Home</a>
       <a href="../work/">Work</a>
       <a href="../services/">Services</a>
+      <a href="../#about">About</a>
       <a href="../contact/">Contact</a>
       <a href="../terms/">Terms</a>
       <a href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">Instagram</a>
@@ -58,10 +59,8 @@
       <div class="contact-copy">
         <p class="eyebrow">Let's work together</p>
         <h2>Ready to improve your online presence?</h2>
-        <p>
-          We create free homepage concepts for your business before you commit to anything.
-          Send us your business name, current website or social media page, and what you’d like improved.
-        </p>
+        <p>Share a few details and we’ll take it from there. Your homepage concept is free, with no payment or obligation.</p>
+        <p class="response-note"><i class="fa-regular fa-clock" aria-hidden="true"></i> We usually reply within one working day.</p>
 
         <div class="contact-link-grid">
           <a class="contact-card email-card" href="mailto:hello@meriastudio.com">
@@ -101,11 +100,29 @@
         </label>
 
         <label>
+          What do you need?
+          <select name="service">
+            <option value="">Choose an option</option>
+            <option>Free homepage mockup</option>
+            <option>New website</option>
+            <option>Website redesign</option>
+            <option>Hosting or maintenance</option>
+            <option>Something else</option>
+          </select>
+        </label>
+
+        <label>
+          Website or social page <span class="optional">(optional)</span>
+          <input type="url" name="current-link" placeholder="https://" />
+        </label>
+
+        <label>
           Message
           <textarea name="message" rows="5" placeholder="Tell us what you need help with..." required></textarea>
         </label>
 
         <button type="submit" class="button dark">Send Enquiry</button>
+        <p class="form-note">No payment or commitment is required.</p>
       </form>
     </section>
 

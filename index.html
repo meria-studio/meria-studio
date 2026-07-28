@@ -26,7 +26,7 @@
   <header class="header">
     <a href="./" class="brand"><img src="meria-studio-logo.png" alt="Meria Studio logo" /></a>
 
-    <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.body.classList.toggle('nav-open'); this.setAttribute('aria-expanded', document.body.classList.contains('nav-open'))">
       <span></span>
       <span></span>
       <span></span>
@@ -36,6 +36,7 @@
       <a href="./">Home</a>
       <a href="work/">Work</a>
       <a href="services/">Services</a>
+      <a href="#about">About</a>
       <a href="contact/">Contact</a>
       <a href="terms/">Terms</a>
       <a href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">Instagram</a>
@@ -50,11 +51,12 @@
       <div class="hero-content">
         <p class="eyebrow">Web design for local businesses</p>
         <h1>Built for Growth.</h1>
-        <p class="hero-copy">We design clean, modern websites that help local businesses look professional, build trust and turn visitors into customers.</p>
+        <p class="hero-copy">Clean, modern websites that help local businesses look professional, build trust and turn visitors into customers.</p>
         <div class="actions">
           <a href="contact/" class="button dark">Get a Free Mockup</a>
           <a href="work/" class="button light">View Our Work</a>
         </div>
+        <p class="hero-note">No payment. No obligation. See your homepage concept before you commit.</p>
       </div>
     </section>
 
@@ -67,6 +69,21 @@
       </div>
     </section>
 
+    <section id="about" class="section about-section">
+      <div class="about-heading">
+        <p class="eyebrow">About Meria Studio</p>
+        <h2>Small studio.<br>Personal service.</h2>
+      </div>
+      <p class="about-copy">We’re a Belfast-based web design studio helping small businesses get online with a website that feels professional, clear and completely their own.</p>
+    </section>
+
+    <section class="trust-strip" aria-label="Why choose Meria Studio">
+      <span><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free homepage concept</span>
+      <span><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Mobile-friendly design</span>
+      <span><i class="fa-regular fa-comments" aria-hidden="true"></i> Friendly, personal support</span>
+      <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Based in Belfast</span>
+    </section>
+
     <section id="work" class="section home-work-preview">
       <p class="eyebrow">Our work</p>
       <h2>Selected Work.</h2>
@@ -74,16 +91,18 @@
 
       <div class="work-grid">
         <article class="work-card">
-          <div class="work-image" aria-hidden="true"></div>
+          <div class="work-cover cover-trades" aria-label="Northern Plumbing and Heating concept cover">
+            <span class="cover-type">Trades</span>
+            <strong>Northern Plumbing<br>&amp; Heating</strong>
+            <span class="cover-mark">NP</span>
+          </div>
 
           <div class="work-content">
             <p class="card-label">Website Concept • Trades</p>
             <h3>Northern Plumbing & Heating</h3>
             <span class="concept-badge">Demo Project</span>
             <p>
-              A trades website concept designed to generate emergency callouts,
-              quote requests and local plumbing leads through clear navigation and
-              strong calls to action.
+              A clear, mobile-first trades website designed to encourage calls and quote requests.
             </p>
             <a href="https://meria-studio.github.io/northern-plumbing/" target="_blank" rel="noopener">
               View concept →
@@ -92,16 +111,18 @@
         </article>
 
         <article class="work-card">
-          <div class="work-image" aria-hidden="true"></div>
+          <div class="work-cover cover-beauty" aria-label="Luxe Beauty Studio concept cover">
+            <span class="cover-type">Beauty</span>
+            <strong>Luxe Beauty<br>Studio</strong>
+            <span class="cover-mark">LB</span>
+          </div>
 
           <div class="work-content">
             <p class="card-label">Website Concept • Beauty</p>
             <h3>Luxe Beauty Studio</h3>
             <span class="concept-badge">Demo Project</span>
             <p>
-              A premium beauty salon website concept focused on treatments,
-              bookings, reviews and luxury branding through an elegant customer
-              experience.
+              An elegant salon concept focused on treatments, bookings and premium branding.
             </p>
             <a href="https://meria-studio.github.io/luxe-beauty/" target="_blank" rel="noopener">
               View concept →
@@ -110,15 +131,18 @@
         </article>
 
         <article class="work-card">
-          <div class="work-image" aria-hidden="true"></div>
+          <div class="work-cover cover-restaurant" aria-label="Bodrum Crumlin concept cover">
+            <span class="cover-type">Restaurant</span>
+            <strong>Bodrum<br>Crumlin</strong>
+            <span class="cover-mark">BC</span>
+          </div>
 
           <div class="work-content">
             <p class="card-label">Website Concept • Restaurant</p>
             <h3>Bodrum Crumlin Concept</h3>
             <span class="concept-badge">Demo Project</span>
             <p>
-              A restaurant and takeaway website concept featuring online ordering,
-              featured dishes, customer reviews and a mobile-first design.
+              A modern restaurant concept built around menus, online ordering and mobile use.
             </p>
             <a href="https://bodrum-premium-dine.lovable.app" target="_blank" rel="noopener">
               View concept →
@@ -134,31 +158,25 @@
 
     <section class="section process">
       <p class="eyebrow">Our process</p>
-      <h2>How we bring your website to life.</h2>
+      <h2>Simple from start to launch.</h2>
 
-      <div class="process-grid">
+      <div class="process-grid process-grid-three">
         <div class="process-card">
           <span>01</span>
-          <h3>Free Website Concept</h3>
-          <p>We create a complimentary homepage concept tailored to your business before you commit.</p>
+          <h3>Tell us about your business</h3>
+          <p>Share your goals, current website or social page and what you need.</p>
         </div>
 
         <div class="process-card">
           <span>02</span>
-          <h3>Review & Refine</h3>
-          <p>We'll work with you to make changes, refine the design and ensure everything reflects your business perfectly.</p>
+          <h3>See your free concept</h3>
+          <p>We create a tailored homepage preview with no payment or obligation.</p>
         </div>
 
         <div class="process-card">
           <span>03</span>
-          <h3>Build & Launch</h3>
-          <p>Once approved, we build the full website, connect your domain and launch it online.</p>
-        </div>
-
-        <div class="process-card">
-          <span>04</span>
-          <h3>Ongoing Support</h3>
-          <p>We can continue to help with updates, maintenance and improvements whenever your business needs them.</p>
+          <h3>Build and launch</h3>
+          <p>If you love it, we refine the design, build the full site and get you online.</p>
         </div>
       </div>
     </section>
