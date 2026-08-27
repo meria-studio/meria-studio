@@ -146,3 +146,76 @@ footer div{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
 
 .process-grid-three{grid-template-columns:repeat(3,1fr)}
 @media(max-width:950px){.process-grid-three{grid-template-columns:1fr}}
+
+
+/* Portfolio alignment cleanup */
+.work-grid{align-items:stretch}
+.work-card{height:100%}
+.work-content{
+  display:grid;
+  grid-template-rows:auto minmax(54px,auto) auto 1fr auto;
+  align-content:start;
+}
+.work-content .card-label{
+  min-height:18px;
+  margin-bottom:10px;
+}
+.work-content h3{
+  min-height:54px;
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:10px;
+}
+.work-content .concept-badge{
+  justify-self:start;
+  margin-bottom:16px;
+}
+.work-content p:not(.card-label){
+  margin-top:0;
+}
+.work-content>a{
+  align-self:end;
+  margin-top:18px;
+}
+@media(max-width:950px){
+  .work-content{grid-template-rows:auto auto auto auto auto}
+  .work-content h3{min-height:0}
+}
+
+
+/* Soft project accents — colour without losing the minimal Meria look */
+.project-plumbing{--project-accent:#dce7ec;--project-accent-deep:#55717d}
+.project-beauty{--project-accent:#f1dfe1;--project-accent-deep:#8c6469}
+.project-restaurant{--project-accent:#e1e7d8;--project-accent-deep:#68745c}
+
+.work-card.project-plumbing .work-image,
+.work-card.project-beauty .work-image,
+.work-card.project-restaurant .work-image{
+  background:
+    radial-gradient(circle at 18% 20%,rgba(255,255,255,.72),transparent 32%),
+    linear-gradient(135deg,var(--project-accent),#f8f8f6);
+  border-bottom:1px solid rgba(17,17,17,.05);
+  position:relative;
+}
+.work-card.project-plumbing .work-image::after,
+.work-card.project-beauty .work-image::after,
+.work-card.project-restaurant .work-image::after{
+  content:"";
+  width:54px;
+  height:4px;
+  border-radius:999px;
+  background:var(--project-accent-deep);
+  opacity:.72;
+}
+.work-card.project-plumbing .card-label,
+.work-card.project-beauty .card-label,
+.work-card.project-restaurant .card-label{
+  color:var(--project-accent-deep);
+}
+.work-card.project-plumbing .concept-badge,
+.work-card.project-beauty .concept-badge,
+.work-card.project-restaurant .concept-badge{
+  background:var(--project-accent);
+  border-color:transparent;
+  color:var(--project-accent-deep);
+}
