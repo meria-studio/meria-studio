@@ -1,24 +1,10 @@
-MERIA STUDIO — CLEAN VERSION
+MERIA STUDIO V2
 
-This version keeps the existing Meria visual style but reduces the amount of copy
-and removes anything that felt repetitive or unnecessary.
+Changes in this version:
+- Removed all visible references to Crumlin/Bodrum from the portfolio.
+- Renamed the restaurant example to "Modern Restaurant Concept".
+- Tightened all three portfolio descriptions.
+- Made the Work page clearly read as concept work rather than real client case studies.
+- Kept the existing Meria design and previous clean-up changes.
 
-Main changes:
-- Removed all fixed starting-price references.
-- Pricing is now positioned as flexible and tailored to the business/budget.
-- Services reduced to 3 clear categories.
-- Public process reduced to 3 simple steps.
-- FAQ reduced to 4 useful questions.
-- About page shortened; unnecessary industry list removed.
-- Work-page demo explanation removed because projects already have Demo Project badges.
-- Homepage and Contact copy shortened.
-- Internal/template-style disclaimers removed from legal pages.
-- Terms still contain payment/revision details because those are useful contractual protections.
-
-Pricing language now communicates:
-clear upfront quotes + no unnecessary extras + willingness to work around a client's budget.
-
-Still to do later:
-- custom social-sharing image
-- Search Console
-- optional Analytics
+This is a genuinely changed version, so GitHub should now detect changed files when uploaded.
