@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Meria Studio | Belfast Web Design Studio</title>
+  <meta name="description" content="Meet Meria Studio, an independent Belfast web design studio helping small businesses across Northern Ireland build a stronger online presence." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://meriastudio.com/about/" />
+  <meta property="og:title" content="About Meria Studio | Belfast Web Design Studio" />
+  <meta property="og:description" content="A small independent web design studio creating modern websites for businesses across Northern Ireland." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://meriastudio.com/about/" />
+  <meta property="og:image" content="https://meriastudio.com/https://meriastudio.com/favicon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="https://meriastudio.com/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="https://meriastudio.com/favicon.png" />
+  <link rel="apple-touch-icon" href="https://meriastudio.com/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="../" class="brand"><img src="https://meriastudio.com/meria-studio-logo.png" alt="Meria Studio logo" /></a>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="../">Home</a>
+      <a href="../work/">Work</a>
+      <a href="../services/">Services</a>
+      <a href="../about/">About</a>
+      <a href="../contact/">Contact</a>
+      <a href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">Instagram</a>
+      <a href="../contact/" class="nav-button">Free Mockup</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <img class="hero-watermark" src="https://meriastudio.com/meria-studio-logo.png" alt="" aria-hidden="true" />
+      <div class="page-hero-content">
+        <p class="eyebrow">About Meria Studio</p>
+        <h1>Small studio. Personal service.</h1>
+        <p>An independent Belfast web design studio helping small businesses across Northern Ireland look better online.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Why Meria</p>
+      <h2>Good local businesses deserve better websites.</h2>
+      <p class="section-copy">We started Meria Studio to make good web design simpler for local businesses — professional websites, straightforward communication and no unnecessary agency fuss.</p>
+      <div class="services-grid">
+        <article><h3>Direct communication</h3><p>You deal directly with us throughout your project. No account managers, complicated handovers or unnecessary meetings.</p></article>
+        <article><h3>Built around your business</h3><p>Every website is shaped around your customers, services and goals rather than forcing your business into a generic template.</p></article>
+        <article><h3>See it before you commit</h3><p>We can create a free homepage concept so you can see the direction we’d take before deciding whether to move forward.</p></article>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <p class="eyebrow">Based in Belfast. Working across NI.</p>
+      <h2>Have a business that deserves a better website?</h2>
+      <p>Tell us what you do and we’ll show you what a stronger online presence could look like.</p>
+      <a href="../contact/" class="button white">Get a Free Mockup</a>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Meria Studio. Independent website design studio based in Belfast, working with businesses across Northern Ireland.</p>
+    <div>
+      <a href="mailto:hello@meriastudio.com">Email</a>
+      <a href="https://www.instagram.com/meria.studios" target="_blank" rel="noopener">Instagram</a>
+      <a href="../terms/">Terms</a>
+      <a href="../privacy/">Privacy</a>
+    </div>
+  </footer>
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <p>This website uses essential browser storage to remember your cookie notice choice. <a href="../privacy/">Learn more</a></p>
+    <button id="accept-cookies" type="button">Accept</button>
+  </div>
+  <script>
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptCookies = document.getElementById('accept-cookies');
+    if (cookieBanner && !localStorage.getItem('meriaCookiesAccepted')) {
+      cookieBanner.style.display = 'flex';
+    }
+    if (acceptCookies) {
+      acceptCookies.addEventListener('click', () => {
+        localStorage.setItem('meriaCookiesAccepted', 'true');
+        cookieBanner.style.display = 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
